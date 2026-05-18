@@ -1,0 +1,24 @@
+Atividade Prática (Passo a Passo)
+Esta atividade foca na montagem da estrutura física do projeto.
+Criação do Ambiente: 
+Crie uma pasta chamada Aula3.
+Crie a venv
+Dentro da pasta Aula3, abra o terminal e instale o Flask: pip install flask.
+Criação do Servidor:
+Crie o arquivo app.py e cole o código de exemplo acima.
+
+Criação do Front-end:
+Crie uma pasta chamada templates.
+Dentro de templates, crie um arquivo home.html.
+Escreva qualquer mensagem no HTML (Ex: <h1>Bem-vindo ao meu primeiro site em Flask!</h1>).
+
+Teste de Execução:
+
+Rode o comando: python app.py.
+
+Abra o navegador em: http://127.0.0.1:5000.
+
+Desafio de Fixação:
+Tente renomear a pasta templates para meus_arquivos e veja o erro que aparece no navegador. Depois, volte para o nome correto. Isso ajuda a memorizar a importância da convenção.
+
+Antes de entregar rode no terminal python -m black caminhodoarquivo.py

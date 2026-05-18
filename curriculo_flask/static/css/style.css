@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+}
+
+.menu {
+    width: 200px;
+    background-color: #520606;
+    padding: 20px;
+    height: 100vh;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 0;
+}
+
+.menu ul li a:hover {
+    color: #f0c0c0;
+}
+
+.conteudo {
+    flex: 1;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #520606;
+}
+
+h2 {
+    color: #7a1010;
+    margin-top: 30px;
+}

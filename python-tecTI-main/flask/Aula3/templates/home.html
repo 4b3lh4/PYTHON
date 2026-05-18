@@ -1,0 +1,19 @@
+<! -- Este é um exemplo de template HTML para a página inicial do Flask.
+  Ele inclui um título, um parágrafo de boas-vindas e um link para um arquivo CSS externo. ->
+
+
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PYTHON 2.0 </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head> 
+
+<body>
+    <h1>Olá, pessoal!</h1>
+    <p>Este é um exemplo de página inicial usando Flask e HTML.</p>
+    <p>Fiquem à vontade para explorar e aprender mais sobre desenvolvimento web!</p>
+</body>

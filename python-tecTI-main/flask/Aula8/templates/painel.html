@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel de Mobilidade Urbana</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Painel de Mobilidade Urbana</h1>
+
+        <form method="POST">
+            <div class="form-grupo">
+                <label for="num_linha">Número da Linha:</label>
+                <input type="text" id="num_linha" name="num_linha" placeholder="Ex: 82, 5106, SC01">
+            </div>
+            <button type="submit">Consultar Linha</button>
+        </form>
+
+        {% if erro %}
+            <div class="alerta-erro">
+                {{ erro }}
+            </div>
+        {% endif %}
+
+        {% if linha %}
+            <div class="painel-resultado">
+                <h2>{{ linha.nome }}</h2>
+                <div class="tempo-espera">
+                    Próximo ônibus em: <strong>{{ linha.tempo }}</strong>
+                </div>
+                <h3>Paradas:</h3>
+                <ul>
+                    {% for parada in linha.paradas %}
+                        <li>{{ parada }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

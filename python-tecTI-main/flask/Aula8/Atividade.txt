@@ -1,0 +1,42 @@
+Nesta atividade você vai desenvolver um sistema web de consulta de especialidades médicas usando o framework Flask. 
+O usuário digita o nome de uma especialidade (ex.: Cardiologia) e o sistema exibe os médicos disponíveis, seus CRMs e os planos de saúde que eles aceitam.
+
+
+Objetivos
+•	Criar e organizar um projeto Flask do zero
+•	Entender o ciclo requisição → servidor → resposta
+•	Trabalhar com rotas GET e POST
+•	Acessar dados enviados por formulários HTML
+•	Passar listas e dicionários Python para templates Jinja2
+•	Tratar entradas inválidas e exibir mensagens de erro
+
+
+Estrutura
+Aula8/
+   /templates
+   /static
+      /css
+      /js
+
+
+Serão fornecidos:
+html básico
+css básico
+e js básico
+---OTIMIZE
+
+
+Dicionário
+dados_especialidades = {
+    "Cardiologia": [
+        {"nome": "Dr. André Souza", "crm": "CRM/MG 18432", "planos": ["Unimed", "Amil", "SulAmérica"]},
+        {"nome": "Dra. Fernanda Melo", "crm": "CRM/MG 22105", "planos": ["Bradesco Saúde", "Unimed"]},
+    ],
+    "Pediatria": [
+        {"nome": "Dra. Carla Nunes", "crm": "CRM/MG 15780", "planos": ["Unimed", "Hapvida", "Amil"]},
+        {"nome": "Dr. Lucas Ribeiro", "crm": "CRM/MG 31209", "planos": ["SulAmérica", "NotreDame"]},
+    ],
+    "Dermatologia": [
+        {"nome": "Dra. Juliana Costa", "crm": "CRM/MG 29801", "planos": ["Amil", "Bradesco Saúde"]},
+    ],
+}

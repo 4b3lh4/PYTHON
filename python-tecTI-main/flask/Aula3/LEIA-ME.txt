@@ -1,0 +1,10 @@
+Até agora incluímos o HTML no retorno da função.
+Hoje vamos aprender a estrutura básica do FLASK.
+
+criar a pasta para Aula3
+Dentro da pasta Aula3, criar um arquivo com o nome de app.py
+Dentro da pasta Aula3, criar uma outra pasta com o nome de templates
+Dentro da pasta templates criar um arquivo com o nome de home.html
+
+O Flask sempre procura a pasta com o nome exato "templates" (no plural).
+ Se você errar uma letra no nome da pasta, ele retornará um erro de TemplateNotFound
