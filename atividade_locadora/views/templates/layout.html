@@ -2,19 +2,38 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}Aula 11{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <nav class="nav">
-        <a href="{{ url_for('dashboard.index') }}">Início</a>
-        <a href="{{ url_for('clientes.listar') }}">Clientes</a>
-        <a href="{{ url_for('pedidos.listar') }}">Pedidos</a>
-        <a href="{{ url_for('locadora.index') }}">Locadora</a>
-    </nav>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="brand-logo">◆</span>
+                <span class="brand-name">Locadora<strong>Pro</strong></span>
+            </div>
+            <nav class="nav">
+                <a href="{{ url_for('dashboard.index') }}"><span class="nav-ico">▣</span> Início</a>
+                <a href="{{ url_for('clientes.listar') }}"><span class="nav-ico">◔</span> Clientes</a>
+                <a href="{{ url_for('pedidos.listar') }}"><span class="nav-ico">▤</span> Pedidos</a>
+                <a href="{{ url_for('locadora.index') }}"><span class="nav-ico">⬢</span> Locadora</a>
+            </nav>
+            <div class="sidebar-foot">Aula 11 · MVC</div>
+        </aside>
 
-    <main class="container">
-        {% block content %}{% endblock %}
-    </main>
+        <div class="content-wrap">
+            <header class="topbar">
+                <div class="topbar-title">Painel de Gestão</div>
+                <div class="topbar-badge">v1.0</div>
+            </header>
+            <main class="container">
+                {% block content %}{% endblock %}
+            </main>
+        </div>
+    </div>
 </body>
 </html>
